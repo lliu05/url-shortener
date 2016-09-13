@@ -53,15 +53,13 @@ app.get("/:short", function(req, res) {
             //console.log(docs[0]);
             console.log(docs);
             if (docs) {
-            res.writeHead(302, {
-                'Location': docs[0]["original_url"]
-            }
-            else {
-                res.send({
-                "error": "This url is not on the database or database is still pending"
+                res.writeHead(302, {
+                    'Location': docs[0]["original_url"]
                 });
             }
-            });
+            else {
+                res.send({"error": "This url is not on the database or database is still pending"});
+            }
             res.end();
             db.close();
         });
