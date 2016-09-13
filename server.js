@@ -52,11 +52,11 @@ app.get("/:short", function(req, res) {
             if (err) throw err;
             //console.log(docs[0]);
             console.log(docs);
-            db.close();
             res.writeHead(302, {
                 'Location': docs[0]["original_url"]
             });
             res.end();
+            db.close();
         });
     });
 });
