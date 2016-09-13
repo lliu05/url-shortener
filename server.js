@@ -51,6 +51,7 @@ app.get("/:short", function(req, res) {
         }).toArray(function(err, docs) {
             if (err) throw err;
             //console.log(docs[0]);
+            console.log(docs);
             db.close();
             res.writeHead(302, {
                 'Location': docs[0]["original_url"]
