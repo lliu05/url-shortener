@@ -52,7 +52,7 @@ app.get("/:short", function(req, res) {
             if (err) throw err;
             //console.log(docs[0]);
             console.log(docs);
-            if (docs) {
+            if (docs.length != 0) {
                 res.writeHead(302, {
                     'Location': docs[0]["original_url"]
                 });
