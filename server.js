@@ -6,6 +6,9 @@ var mongo = require("mongodb").MongoClient;
 var main_page = "https://luna-url-short.herokuapp.com/";
 var mongo_url = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/url-shortener';
 
+app.use(express.static(path.join(__dirname, 'static/html')));
+app.use(express.static(path.join(__dirname, 'static/css')));
+
 //input original url, output json {original_url, short_url}
 app.get("/new/:url*", function(req, res) {
     var original = req.url.slice(5);

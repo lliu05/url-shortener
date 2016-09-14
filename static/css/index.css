@@ -1,0 +1,28 @@
+body {
+  padding: 0 5% 5% 5%;
+  font-family: "verdana";
+  background-color: #ffffb3;
+}
+
+.title {
+  padding: 20px;
+  padding-bottom: 0px;
+  color: navy;
+}
+
+.section {
+  padding: 20px;
+}
+
+li {
+  padding: 10px;
+  font-size: 20px;
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 110%;
+    color: navy;
+    background-color: pink;
+    border-radius: 4px;
+}
