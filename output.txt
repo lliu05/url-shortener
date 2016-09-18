@@ -1,0 +1,26 @@
+
+server.js
+ #1 Unexpected dangling '_' in '__dirname'.
+    app.use(express.static(path.join(__dirname, 'static/html'))); // Line 11, Pos 34
+ #2 Unexpected dangling '_' in '__dirname'.
+    app.use(express.static(path.join(__dirname, 'static/css'))); // Line 12, Pos 34
+ #3 Combine this with the previous 'var' statement.
+    var random_num = Math.floor(Math.random() * 10000) + 1; // Line 19, Pos 13
+ #4 Expected 'shortened' at column 9, not column 13.
+    shortened = main_page + random_num; // Line 20, Pos 13
+ #5 Expected 'result' at column 9, not column 13.
+    result = { // Line 21, Pos 13
+ #6 Unexpected character '(space)'.
+    "short_url": shortened // Line 23, Pos 43
+ #7 'shortened' was used before it was defined.
+    "short_url": shortened // Line 23, Pos 26
+ #8 Expected '}' at column 9, not column 5.
+    }; // Line 24, Pos 5
+ #9 Unexpected character '(space)'.
+     // Line 25, Pos 8
+#10 Expected exactly one space between 'function' and '('.
+    mongo.connect(mongo_url, function(err, db) { // Line 26, Pos 42
+#11 Expected '{' and instead saw 'throw'.
+    if (err) throw err; // Line 27, Pos 22
+#12 Stopping. (36% scanned).
+     // Line 27, Pos 22
