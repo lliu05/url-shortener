@@ -36,7 +36,6 @@ app.get("/new/:url*", function (req, res) {
     }
 });
 
-
 //input shortened url, direct page to original url page
 app.get("/:short", function (req, res) {
     var shortened = parseInt(req.params.short, 10);
@@ -64,4 +63,6 @@ app.get("/:short", function (req, res) {
 });
 
 
-app.listen(process.env.PORT || 8080);
+var server = app.listen(process.env.PORT || 8080);
+
+module.exports = server;
