@@ -11,5 +11,6 @@ before_script:
 - sleep 15
 - mongo url-shortener --eval 'db.url.createIndex({short:1}, {unique:true});'
 deploy:
+  provider: heroku
   api_key:
     secure: KWAC7OvggbDzxdMYDsgxv/wEKuuRElfNEM0KDHA9dkgFic/CH+HWR7nz8EYngiNEOSlvRJIYLn8OWmI2aiazmusFpMOiSTeE7e0XETfT+jyd0WDlNX6amAxURcQ2glYDA1/i88dAdEmImfGQuH2WMIGSVdUjHbTxsr9ncQaZYNDpQtTd1vtqVOHGoKU7eAaUUV1K6+DPE89B43HzTsAENJBAJLCkapWcAFtLZqjp1ZLxlo77kFhkuT4PTSoZQXTIkRGGcP++lGDYqGQOWbGwlO5fVjYT+SRFRMnOUCPRNyqbXfM1XjUEw7ehkgG2fIaqT5dj8cVWFtj1eQeYynAI8WAifN8/cR2kKUYH1W9jwo4oORUaY2OfpTqpy6jlpBrd4E6AJVQwES+lTdtezlVDR8hB+qVoH2pUJ2GGlH2Buff3cmgu76+eVlDhlkfvnKIXicVcUDDXX440s5+cL9mqb7iQy/Wk69cF5EtOn1Z1BWhdV+D+RxkUtBGiXJhzFaD9ElzAO8mw9lb9f2TUNl/jj53VHvyySiSHZXEY8MQU52R2nAUqpOIF2l1VYpYXwlFeYWjTXBVflKW3SYgzITY5PqvUNKY3WTFOcYutaqPladrls16/Vk+xL2t86fxZGZXKDCA4eHstbBQkygzQAohcUYQXCeTOSqM1i29WnLOGfGU=
