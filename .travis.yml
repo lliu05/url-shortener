@@ -1,12 +1,12 @@
 language: node_js
-services:
-    - mongodb
 addons:
-    apt:
-        sources:
-        - mongodb-3.0-precise
-        packages:
-        - mongodb-org-server
+  apt:
+    sources:
+      - mongodb-upstart
+      - mongodb-3.0-precise
+    packages:
+      - mongodb-org-server
+      - mongodb-org-shell
 before_script:
     - sleep 15
     - mongo url-shortener --eval 'db.url.createIndex({short:1}, {unique:true});' 
