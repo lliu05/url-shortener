@@ -10,6 +10,9 @@ addons:
 before_script:
 - sleep 15
 - mongo url-shortener --eval 'db.url.createIndex({short:1}, {unique:true});'
+after_script:
+- npm install codeclimate-test-reporter
+- codeclimate-test-reporter < ./coverage/lcov.info
 deploy:
   provider: heroku
   app: luna-url-short

@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "mocha tests --recursive",
+    "test": "istanbul cover _mocha -R tests",
     "start": "node server.js"
   },
   "author": "",
