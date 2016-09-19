@@ -2,5 +2,5 @@ language: node_js
 services:
     - mongodb
 before_script:
-    sleep 15
+    - sleep 15
     - mongo url-shortener --eval 'db.url.createIndex({short:1}, {unique:true});' 
