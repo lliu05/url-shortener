@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/lliu05/url-shortener.svg?branch=master)](https://travis-ci.org/lliu05/url-shortener)
 [![Code Climate](https://codeclimate.com/github/lliu05/url-shortener/badges/gpa.svg)](https://codeclimate.com/github/lliu05/url-shortener)
-
+[![Test Coverage](https://codeclimate.com/github/lliu05/url-shortener/badges/coverage.svg)](https://codeclimate.com/github/lliu05/url-shortener/coverage)
 
 User Story: I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
 
